@@ -1,0 +1,63 @@
+.tab{
+    margin:50px 0;
+    .container{
+        .row{
+            width:100%;
+            .portfolio-header{
+                text-align: center;
+                h2{
+                    font-size: 41px;
+                    font-family: "Josefin Sans",sans-serif;
+                    display: block;
+                    color: palevioletred;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    margin: 50px 0;
+                }
+            }
+            .tabs{
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                h3 {
+                    background-color: palevioletred;
+                    opacity: 0.5;
+                    text-align: center;
+                    color:white;
+                    font-size: 20px;
+                    padding: 15px 0;
+                    cursor: pointer;
+                    font-weight: 700;
+                }
+                .active{
+                    background-color: #ffffff;
+                    color: palevioletred;
+                }
+            }
+            .tab-content {
+                background-color: #ffffff;
+                padding: 50px 40px;
+                .tab-info{
+                    display: none;
+                    h4 {
+                        font-size: 28px;
+                        margin-bottom: 20px;
+                        color: #000224;
+                        font-weight: 600;
+                    }
+                    p {
+                        text-align: justify;
+                        line-height: 1.9;
+                        letter-spacing: 0.4px;
+                        color: #202238;
+                    }
+                    
+                }
+                .active{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+

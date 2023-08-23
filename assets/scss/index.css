@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+}
+header .navBar .nav-logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+header .navBar .nav-logo a {
+  color: palevioletred;
+  transition: 0.3s;
+}
+header .navBar .nav-logo a:hover {
+  opacity: 0.8;
+}
+header .navBar .main-menu {
+  display: flex;
+  font-size: 20px;
+  gap: 30px;
+}
+header .navBar .main-menu .menu-item a {
+  color: rgb(194, 86, 122);
+  transition: 0.3s;
+}
+header .navBar .main-menu .menu-item a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: palevioletred;
+}
+header .navBar .portfolio-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navBar .portfolio-content .picture {
+  width: 50px;
+  height: 50px;
+  border: 1px solid brown;
+  border-radius: 25px;
+}
+header .navBar .portfolio-content .picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+header .navBar .portfolio-content .portfolio-detail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgb(194, 86, 122), palevioletred);
+  margin-top: 70px;
+  margin-right: 0;
+  padding: 15px;
+  border-radius: 25px;
+  visibility: hidden;
+  z-index: 99;
+}
+header .navBar .portfolio-content .portfolio-detail .myInfo {
+  font-size: 16px;
+  color: white;
+}
+header .navBar .portfolio-content .portfolio-detail .myInfo .myName {
+  font-weight: 800;
+}
+header .navBar .portfolio-content .portfolio-detail .myInfo .myInfo-contact {
+  list-style-type: circle;
+  margin-left: 10px;
+}
+header .navBar .portfolio-content .portfolio-detail .myInfo .myInfo-contact a {
+  color: white;
+  line-height: 1.5;
+}
+header .navBar .portfolio-content .active {
+  visibility: visible;
+}
+
+.hero {
+  width: 100%;
+}
+.hero .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .row .swiper .swiper-wrapper {
+  width: 100%;
+  height: 500px;
+}
+.hero .row .swiper .swiper-wrapper .swiper-slide {
+  background-image: url(/assets/images/myPhoto1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content {
+  padding: 15px;
+  position: relative;
+  border: 1px solid bisque;
+}
+.hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content .letKnow {
+  color: red;
+  font-size: 16px;
+  padding: 15px 5px;
+  background-color: rgb(237, 203, 142);
+  display: inline-block;
+}
+.hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content .info {
+  width: 300px;
+  height: 150px;
+  padding: 0;
+  background-color: wheat;
+  color: red;
+  padding: 15px 5px;
+}
+
+.tab {
+  margin: 50px 0;
+}
+.tab .container .row {
+  width: 100%;
+}
+.tab .container .row .portfolio-header {
+  text-align: center;
+}
+.tab .container .row .portfolio-header h2 {
+  font-size: 41px;
+  font-family: "Josefin Sans", sans-serif;
+  display: block;
+  color: palevioletred;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 50px 0;
+}
+.tab .container .row .tabs {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tab .container .row .tabs h3 {
+  background-color: palevioletred;
+  opacity: 0.5;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+.tab .container .row .tabs .active {
+  background-color: #ffffff;
+  color: palevioletred;
+}
+.tab .container .row .tab-content {
+  background-color: #ffffff;
+  padding: 50px 40px;
+}
+.tab .container .row .tab-content .tab-info {
+  display: none;
+}
+.tab .container .row .tab-content .tab-info h4 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000224;
+  font-weight: 600;
+}
+.tab .container .row .tab-content .tab-info p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: #202238;
+}
+.tab .container .row .tab-content .active {
+  display: block;
+}
+
+.accordion-content .container .row .portfolio-header {
+  text-align: center;
+}
+.accordion-content .container .row .portfolio-header h2 {
+  font-size: 41px;
+  font-family: "Josefin Sans", sans-serif;
+  display: block;
+  color: palevioletred;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+.accordion-content .container .row .accordion {
+  width: 100%;
+  margin: 50px auto;
+  color: black;
+  background-color: white;
+  padding: 45px 45px;
+}
+.accordion-content .container .row .accordion .accordion-detail {
+  position: relative;
+  margin: 10px 10px;
+}
+.accordion-content .container .row .accordion .accordion-detail .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+.accordion-content .container .row .accordion .accordion-detail::before {
+  content: "+";
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+.accordion-content .container .row .accordion .accordion-detail .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.accordion-content .container .row .accordion .active .content {
+  height: 150px;
+}
+.accordion-content .container .row .accordion .active .content .label::before {
+  content: "-";
+  font-size: 30px;
+}
+
+.portfolio {
+  margin-top: 50px;
+}
+.portfolio .container .row {
+  width: 100%;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio .container .row .portfolio-header {
+  text-align: center;
+}
+.portfolio .container .row .portfolio-header span {
+  font-size: 16px;
+  color: #7EA0FF;
+  margin-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+.portfolio .container .row .portfolio-header h2 {
+  font-size: 41px;
+  font-family: "Josefin Sans", sans-serif;
+  display: block;
+  color: palevioletred;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+.portfolio .container .row .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.portfolio .container .row .cards .card {
+  width: 25%;
+  height: 300px;
+  box-shadow: 0 10px 15px rgba(0, 9, 94, 0.06);
+}
+.portfolio .container .row .cards .card .card-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio .container .row .cards .card .card-image img {
+  width: 100%;
+  height: 300px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 1;
+}
+.portfolio .container .row .cards .card .card-image img:hover {
+  transform: scale(1.1);
+}
+.portfolio .container .row .cards .card .card-image .image-hover {
+  width: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  font-size: 30px;
+  bottom: 0;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.portfolio .container .row .cards .card .card-image .image-hover .image-info {
+  color: black;
+  padding: 10px;
+}
+.portfolio .container .row .cards .card .card-image .image-hover .image-info .project-name {
+  font-size: 20px;
+  text-align: center;
+}
+.portfolio .container .row .cards .card .card-image .image-hover .image-info .project-description {
+  font-size: 16px;
+}
+.portfolio .container .row .cards .card .card-image .image-hover .learn-more {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+.portfolio .container .row .cards .card .card-image .image-hover .learn-more .btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 24px;
+  color: red;
+  background-color: palevioletred;
+  border: none;
+}
+.portfolio .container .row .cards .card .card-image:hover img {
+  opacity: 0.9;
+}
+.portfolio .container .row .cards .card .card-image:hover .image-hover {
+  opacity: 1;
+}
+
+.contact {
+  margin: 50px 0;
+}
+.contact .container .row .portfolio-header {
+  text-align: center;
+}
+.contact .container .row .portfolio-header h2 {
+  font-size: 41px;
+  font-family: "Josefin Sans", sans-serif;
+  display: block;
+  color: palevioletred;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.contact .container .row .contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.contact .container .row .contact-form form input[type=text] {
+  width: 50%;
+  min-height: 50px;
+  border-color: #e5e6e9;
+}
+.contact .container .row .contact-form form input[type=email] {
+  width: 50%;
+  min-height: 50px;
+  border-color: #e5e6e9;
+}
+.contact .container .row .contact-form form textarea {
+  width: 50%;
+  min-height: 200px;
+  border-color: #e5e6e9;
+}
+.contact .container .row .contact-form form button {
+  width: 150px;
+  min-height: 60px;
+  border: 1px solid palevioletred;
+  border-radius: 50%;
+  background-color: #fff;
+  color: palevioletred;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  transition: 0.3s ease-in-out;
+}
+.contact .container .row .contact-form form button:hover {
+  color: #fff;
+  background-color: palevioletred;
+}
+
+footer {
+  background-color: palevioletred;
+}
+footer .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 114px;
+}
+footer .row .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .row .footer-top .footer-part {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+footer .row .footer-top .footer-part p {
+  max-width: 370px;
+  color: white;
+  font-size: 16px;
+  margin: 35px 0 21px 0;
+  line-height: 1.8;
+}
+footer .row .footer-top .footer-part .social-medias {
+  margin-bottom: 40px;
+}
+footer .row .footer-top .footer-part .social-medias a {
+  color: #fff;
+  font-size: 22px;
+  padding: 9px;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+footer .row .footer-top .footer-part .social-medias a:hover {
+  color: white;
+  top: -5px;
+}
+footer .row .footer-top .footer-part h4 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+footer .row .footer-top .footer-part ul li {
+  margin-bottom: 15px;
+}
+footer .row .footer-top .footer-part ul li a {
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+footer .row .footer-top .footer-part ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .row .footer-top .footer-part ul li .github {
+  font-size: 22px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+footer .row .footer-top .footer-part ul li .github:hover {
+  text-decoration: none;
+}
+footer .row .footer-bottom {
+  padding: 45px 0 20px 0;
+}
+footer .row .footer-bottom p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+body {
+  background-color: #d4afbd;
+  background-image: linear-gradient(270deg, #d4afbd 0%, #fcdcef 13%, #ffffff 100%);
+}/*# sourceMappingURL=index.css.map */

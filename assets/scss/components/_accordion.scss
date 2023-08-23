@@ -1,0 +1,64 @@
+.accordion-content{
+    .container{
+        .row{
+            .portfolio-header{
+                text-align: center;
+                h2{
+                    font-size: 41px;
+                    font-family: "Josefin Sans",sans-serif;
+                    display: block;
+                    color: palevioletred;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    margin-top: 20px;
+                }
+            }
+            .accordion {
+                width: 100%;
+                margin: 50px auto;
+                color: black;
+                background-color: white;
+                padding: 45px 45px;
+                .accordion-detail {
+                    position: relative;
+                    margin: 10px 10px;
+                    .label {
+                        position: relative;
+                        padding: 10px 0;
+                        font-size: 30px;
+                        color: black;
+                        cursor: pointer;
+                        
+                    }
+                    &::before{
+                            content: '+';
+                            color: black;
+                            position: absolute;
+                            top: 50%;
+                            right: -5px;
+                            font-size: 30px;
+                            transform: translateY(-50%);
+                    }
+                    .content {
+                        position: relative;
+                        background: white;
+                        height: 0;
+                        font-size: 20px;
+                        text-align: justify;
+                        width: 780px;
+                        overflow: hidden;
+                        transition: 0.5s;
+                    }
+                }
+                .active .content {
+                    height: 150px;
+                    .label::before {
+                        content: '-';
+                        font-size: 30px;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./assets/scss/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="nav-logo">
+                <a href="./index.html">frontEND</a>
+            </div>
+            <ul class="main-menu">
+                <li class="menu-item"><a href="./index.html">Home</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#services">Service</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="portfolio-content">
+                <div class="picture"> 
+                    <img src="./assets/images/myPhoto1.jpg" alt="myPhoto1">
+                </div>
+                <div class="portfolio-detail">
+                    <ul class="myInfo">
+                        <li class="myName">Peri Allahverdiyeva</li>
+                        <li class="myInfo-contact"> <a href="mailto:periallahverdiyeva10@gmail.com" target="_blank">periallahverdiyeva10@gmail.com</a></li>
+                        <li class="myInfo-contact"><a href="tel:+994557667836" target="_blank" class="mobile-phone">+994557667936</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="row">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- <img src="./assets/images/myPhoto1.jpg"> -->
+                            <div class="swiper-content">
+                                <h1>I am a Front-END Student</h1>
+                                <a href="#" class="letKnow">Click to learn more...</a>
+                                
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="tab" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-header">
+                        <h2>ABOUT ME</h2>
+                    </div>
+                    <div class="tabs">
+                        <h3 class="active">Tab 1</h3>
+                        <h3>Tab 2</h3>
+                    </div>
+                    <div class="tab-content">
+                        <div class=" tab-info active">
+                        <h4>First Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                            explicabo cum dolores hic possimus aut corrupti quisquam aperiam
+                            quia veniam inventore officiis nam error sunt libero, commodi
+                            architecto reiciendis qui fuga, itaque delectus quidem sequi.
+                            Impedit natus culpa nihil aperiam adipisci aliquam error, suscipit
+                            odio? Error sed esse perspiciatis quasi velit, ratione odit
+                            architecto? Explicabo pariatur.
+                        </p>
+                        </div>
+                        <div class="tab-info">
+                        <h4>Second Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti,
+                            fugiat ab? Accusamus sed a iusto? Placeat incidunt repudiandae vero
+                            magnam nihil tempore quasi earum illum totam aut delectus aliquam
+                            pariatur, iste, qui provident quo voluptatem neque facere id
+                            laudantium aliquid numquam nisi accusantium. Inventore reiciendis
+                            nulla, iste perferendis.
+                        </p>
+                        </div>
+                    </div>    
+                </div> 
+            </div>
+        </section>
+        <section class="accordion-content" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-header">
+                        <h2>SERVICES</h2>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-detail active ">
+                            <div class="label">What is HTML</div>
+                            <div class="content">Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications. A hypertext is a text that is used to reference other pieces of text, while a markup language is a series of markings that tells web servers the style and structure of a document. HTML is very simple to learn and use.</div>
+                        </div>
+                        <div class="accordion-detail">
+                            <div class="label">What is CSS?</div>
+                            <div class="content">CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users. CSS is designed to make style sheets for the web. It is independent of HTML and can be used with any XML-based markup language. CSS is popularly called the design language of the web</div>
+                        </div>
+                        <div class="accordion-detail">
+                            <div class="label">What is JavaScript?</div>
+                            <div class="content">JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third of the web trio.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-header">
+                        <span>Some projects</span>
+                        <h2>MY PORTFOLIO</h2>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-image ">
+                                <img src="./assets/images/pic1.PNG" alt="">
+                                <div class="image-hover">
+                                    <div class="image-info">
+                                        <p class="project-name">Black Boot Black Boot Black Boot Black Boot</p>
+                                        <span class="project-description">55$</span>
+                                    </div>
+                                    <div class="learn-more">
+                                        <button class="btn">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/pic2.PNG" alt="">
+                                <div class="image-hover">
+                                    <a href="#">
+                                        salam
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/pic3.PNG" alt="">
+                                <div class="image-hover">
+                                    <a href="#">
+                                        salam
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-image ">
+                                <img src="./assets/images/pic1.PNG" alt="">
+                                <div class="image-hover">
+                                    <a href="#">
+                                        salam
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/pic2.PNG" alt="">
+                                <div class="image-hover">
+                                    <a href="#">
+                                        salam
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/pic3.PNG" alt="">
+                                <div class="image-hover">
+                                    <a href="#">
+                                        salam
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-header">
+                        <h2>CONTACT ME</h2>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <input type="text" name="surname" placeholder="Enter your surname" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <textarea name="message" cols="30" rows="10" placeholder="Enter Message" required></textarea>
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="footer-top">
+                <div class="footer-part">
+                    <p> I am interested in a web-programming. So I'll continue to boost my skils to be a professional front end developer</p>
+                    <div class="social-medias">
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://az.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-part">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-part">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:periallahverdiyeva10@gmail.com" target="_blank">periallahverdiyeva10@gmail.com</a></li>
+                        <li><a href="https://github.com/peri1012" target="_blank" class="github">https://github.com/peri1012</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    ©<span>2023</span> All rights reserved | made by me
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
