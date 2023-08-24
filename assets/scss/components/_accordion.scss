@@ -50,15 +50,13 @@
                         transition: 0.5s;
                     }
                 }
-                .active .content {
-                    height: 150px;
-                    .label::before {
-                        content: '-';
-                        font-size: 30px;
+                .active {
+                    .content {
+                        height:50px;
                     }
+                    
                 }
             }
-
         }
     }
 }

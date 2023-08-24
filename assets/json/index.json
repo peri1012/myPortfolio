@@ -1,40 +1,110 @@
 {
-    "portfolios": [
-            {
-            "id": 1,
-            "title": "Travel",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic1.png"
-            },
-            {
-            "id": 2,
-            "title": "Snakers",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic2.png"
-            },
-            {
-            "id": 3,
-            "title": "Highsnaker",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic3.png"
-            },
-            {
-            "id": 4,
-            "title": "Nike",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic4.png"
-            },
-            {
-            "id": 5,
-            "title": "Highsnaker",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic5.png"
-            },
-            {
-            "id": 6,
-            "title": "Nike",
-            "description": "Html/SCSS",
-            "imgUrl": "./assets/images/pic6.png"
+    "myDetail":[
+        {
+            "id":1,
+            "imgUrl":"./assets/images/slider1.jpg",
+            "fullName":"Peri Allahverdiyeva",
+            "email":"periallahverdiyeva10@gmail.com",
+            "mobilePhone":"+99455 766-78-36"
+        }
+    ],
+    "slider":[
+        {
+            "id":1,
+            "imgUrl":"./assets/images/slider1.jpg",
+            "imgTitle":"slider1",
+            "swiperContent":{
+                "title":"I am a Front-END Student",
+                "linkTitle":"Click to learn more...",
+                "description":"Lorem ipsum, dolor sit amet consectetur adipisicing elit."
             }
-        ]
+        },
+        {
+            "id":2,
+            "imgUrl":"./assets/images/slider2.jpg",
+            "imgTitle":"slider2",
+            "swiperContent":{
+                "title":"My Experience",
+                "linkTitle":"Get in touch",
+                "description":"Rem facilis at dicta aut autem. Nobis tempore tenetur quam consectetur sed sapiente numquam perspiciatis blanditiis ipsum ad, consequatur facilis ratione velit!"
+            }
+        }
+    ],
+    "skillsTabs": [
+        {
+            "title": "Programming Skills",
+            "skills": [
+                "HTML",
+                "CSS/SCSS",
+                "JAVASCRIPT",
+                "SQL/MYSQL/ORACLE",
+                "C# BASIC"
+            ]
+        },
+        {
+            "title": "Soft Skills",
+            "skills": [
+                "Presentation Abilities",
+                "Soft Skills",
+                "Time Management",
+                "Adaptability",
+                "Empathy"
+            ]
+        }
+    ],
+    "services":[
+        {
+            "id":1,
+            "title":"Responsive Web Design",
+            "description":"Create websites that adapt and look great on various devices, such as desktops, tablets, and smartphones"
+        },
+        {
+            "id":2,
+            "title":"Frontend Development",
+            "description":"Build interactive and dynamic user interfaces using HTML, CSS, and JavaScript."
+        },
+        {
+            "id":3,
+            "title":"Animation and Interactivity",
+            "description":"Use CSS animations, transitions, and JavaScript libraries to bring interfaces to life."
+        }
+    ],
+    "portfolios": [
+        {
+        "id": 1,
+        "title": "Travel",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic1.png"
+        },
+        {
+        "id": 2,
+        "title": "Snakers",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic2.png"
+        },
+        {
+        "id": 3,
+        "title": "Highsnaker",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic3.png"
+        },
+        {
+        "id": 4,
+        "title": "Nike",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic4.png"
+        },
+        {
+        "id": 5,
+        "title": "Highsnaker",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic5.png"
+        },
+        {
+        "id": 6,
+        "title": "Nike",
+        "description": "Html/SCSS",
+        "imgUrl": "./assets/images/pic6.png"
+        }
+    ]
 }

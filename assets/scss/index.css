@@ -104,20 +104,27 @@ header .navBar .portfolio-content .active {
   align-items: center;
 }
 .hero .row .swiper .swiper-wrapper {
-  width: 100%;
+  width: 700px;
   height: 500px;
 }
 .hero .row .swiper .swiper-wrapper .swiper-slide {
-  background-image: url(/assets/images/myPhoto1.jpg);
-  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+.hero .row .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content {
   padding: 15px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
   border: 1px solid bisque;
+  background-color: antiquewhite;
 }
 .hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content .letKnow {
   color: red;
@@ -126,13 +133,11 @@ header .navBar .portfolio-content .active {
   background-color: rgb(237, 203, 142);
   display: inline-block;
 }
-.hero .row .swiper .swiper-wrapper .swiper-slide .swiper-content .info {
-  width: 300px;
-  height: 150px;
-  padding: 0;
-  background-color: wheat;
-  color: red;
-  padding: 15px 5px;
+.hero .row .swiper .swiper-button-next {
+  color: antiquewhite;
+}
+.hero .row .swiper .swiper-button-prev {
+  color: antiquewhite;
 }
 
 .tab {
@@ -179,17 +184,14 @@ header .navBar .portfolio-content .active {
 .tab .container .row .tab-content .tab-info {
   display: none;
 }
-.tab .container .row .tab-content .tab-info h4 {
-  font-size: 28px;
+.tab .container .row .tab-content .tab-info .skills {
+  font-size: 20px;
   margin-bottom: 20px;
-  color: #000224;
+  color: black;
   font-weight: 600;
 }
-.tab .container .row .tab-content .tab-info p {
-  text-align: justify;
-  line-height: 1.9;
-  letter-spacing: 0.4px;
-  color: #202238;
+.tab .container .row .tab-content .tab-info .skills .skill-item {
+  list-style: circle;
 }
 .tab .container .row .tab-content .active {
   display: block;
@@ -245,11 +247,7 @@ header .navBar .portfolio-content .active {
   transition: 0.5s;
 }
 .accordion-content .container .row .accordion .active .content {
-  height: 150px;
-}
-.accordion-content .container .row .accordion .active .content .label::before {
-  content: "-";
-  font-size: 30px;
+  height: 50px;
 }
 
 .portfolio {
