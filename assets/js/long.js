@@ -1,32 +1,18 @@
-//Get Json File
-async function getAllData(){
+//Header info
+const picture = document.querySelector(".picture");
+let myInfo=[]
+async function getMyInfo(){
   try {
     const data=await fetch("./assets/json/index.json")
     .then(res=>res.json())
-    .then(all=>all)
+    .then(allMyInfo=>allMyInfo)
     myInfo= data.myDetail;
     getMyDetail();
-    images= data.slider;
-    mapSwipperData();
-    initializeSwipper();
-    tabsInfo= data.skillsTabs;
-    mapTabData();
-    mapTabName();
-    serviceData= data.services;
-    mapServicesData();
-    openAccordion();
-    portfolioData = data.portfolios; 
-    mapPortfolioData();
   } catch (error) {
       console.log(error)
   }
 }
-getAllData();
-// End this code
-
-//Header info
-const picture = document.querySelector(".picture");
-let myInfo=[];
+getMyInfo();
 const personalDetail = document.querySelector(".portfolio-detail");
 function getMyDetail(){
   myInfo.map(item=>{
@@ -45,7 +31,19 @@ picture.addEventListener("click", () => {
 
 
 //start Slider
-let images=[];
+let images=[]
+async function getAllImages(){
+  try {
+    const data=await fetch("./assets/json/index.json")
+    .then(res=>res.json())
+    .then(allImages=>allImages)
+    images= data.slider;
+    mapSwipperData();
+    initializeSwipper();
+  } catch (error) {
+      console.log(error)
+  }
+}
 const swiperWrapper=document.querySelector(".swiper-wrapper");
 function mapSwipperData() {
     images.map((item) => {
@@ -101,6 +99,7 @@ function initializeSwipper(){
     },
   });
 }
+getAllImages();
 // End slider
 
 
@@ -120,7 +119,21 @@ tabs.forEach((tab, index) => {
     tabs[index].classList.add("active");
   });
 });
-let tabsInfo=[];
+let tabsInfo=[]
+async function getAllTabsInfo(){
+  try {
+    const data=await fetch("./assets/json/index.json")
+    .then(res=>res.json())
+    .then(allInfo=>allInfo)
+    tabsInfo= data.skillsTabs;
+    mapTabData();
+    mapTabName();
+  } catch (error) {
+      console.log(error)
+  }
+}
+getAllTabsInfo();
+
 function mapTabData() {
   tabDetails.forEach((tabDetail, index) => {
     const tab = tabsInfo[index];
@@ -139,7 +152,20 @@ function mapTabName() {
 //End tab
 
 //Start Accordion
-let serviceData=[];
+let serviceData=[]
+async function getAllAccordion(){
+  try {
+    const data=await fetch("./assets/json/index.json")
+    .then(res=>res.json())
+    .then(allAccordion=>allAccordion)
+    serviceData= data.services;
+    mapServicesData();
+    openAccordion();
+  } catch (error) {
+      console.log(error)
+  }
+}
+getAllAccordion();
 const services=document.querySelector(".accordion");
 function mapServicesData() {
   serviceData.map((item) => {
@@ -171,6 +197,18 @@ function openAccordion() {
 
 //start Portfolio
 let portfolioData = [];
+async function getAllData() {
+  try {
+    const data = await fetch('./assets/json/index.json')
+    .then((res) => res.json())
+    .then((allData) => allData);
+    portfolioData = data.portfolios; 
+    mapPortfolioData();
+  } catch (error) {
+    console.log("error");
+  }
+}
+getAllData();
 const portfolio = document.querySelector('.cards');
 function mapPortfolioData() {
   portfolioData.map((item) => {
@@ -193,4 +231,3 @@ function mapPortfolioData() {
       });
 }
 //End Portfolio
-
