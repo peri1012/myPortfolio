@@ -53,3 +53,45 @@ for (i=0; i<accordion.length; i++) {
     this.classList.toggle('active')
   })
 }
+
+
+
+
+let portfolioData = [];
+
+async function getAllData() {
+  try {
+    const data = await fetch('./assets/json/index.json')
+    .then((res) => res.json())
+    .then((allData) => allData);
+    portfolioData = data.portfolios; 
+    mapPortfolioData();
+  } catch (error) {
+    console.log("error");
+  }
+}
+getAllData();
+
+const portfolio = document.querySelector('.cards');
+
+function mapPortfolioData() {
+  portfolioData.map((item) => {
+        portfolio.innerHTML += `
+        <div class="card">
+            <div class="card-image ">
+                <img src="${item.imgUrl}" alt="${item.title}">
+                <div class="image-hover">
+                    <div class="image-info">
+                        <p class="project-name">${item.title}</p>
+                        <span class="project-description">${item.description}</span>
+                    </div>
+                    <div class="learn-more" id="${item.id}">
+                        <button class="btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+      });
+}
+

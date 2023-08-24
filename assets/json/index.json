@@ -1,0 +1,40 @@
+{
+    "portfolios": [
+            {
+            "id": 1,
+            "title": "Travel",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic1.png"
+            },
+            {
+            "id": 2,
+            "title": "Snakers",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic2.png"
+            },
+            {
+            "id": 3,
+            "title": "Highsnaker",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic3.png"
+            },
+            {
+            "id": 4,
+            "title": "Nike",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic4.png"
+            },
+            {
+            "id": 5,
+            "title": "Highsnaker",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic5.png"
+            },
+            {
+            "id": 6,
+            "title": "Nike",
+            "description": "Html/SCSS",
+            "imgUrl": "./assets/images/pic6.png"
+            }
+        ]
+}

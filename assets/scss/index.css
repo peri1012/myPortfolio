@@ -318,7 +318,7 @@ header .navBar .portfolio-content .active {
 .portfolio .container .row .cards .card .card-image .image-hover {
   width: 100%;
   position: absolute;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
   opacity: 0;
   font-size: 30px;
   bottom: 0;
