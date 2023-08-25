@@ -332,27 +332,21 @@ header .navBar .portfolio-content .active {
   padding: 10px;
 }
 .portfolio .container .row .cards .card .card-image .image-hover .image-info .project-name {
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
-}
-.portfolio .container .row .cards .card .card-image .image-hover .image-info .project-description {
-  font-size: 16px;
+  font-weight: 800;
 }
 .portfolio .container .row .cards .card .card-image .image-hover .learn-more {
   width: 100%;
   position: relative;
   top: 0;
 }
-.portfolio .container .row .cards .card .card-image .image-hover .learn-more .btn {
+.portfolio .container .row .cards .card .card-image .image-hover .learn-more .project-description {
   width: 100%;
   padding: 20px;
-  font-size: 24px;
-  color: red;
+  font-size: 16px;
+  color: black;
   background-color: palevioletred;
-  border: none;
-}
-.portfolio .container .row .cards .card .card-image:hover img {
-  opacity: 0.9;
 }
 .portfolio .container .row .cards .card .card-image:hover .image-hover {
   opacity: 1;
@@ -385,6 +379,12 @@ header .navBar .portfolio-content .active {
   min-height: 50px;
   border-color: #e5e6e9;
 }
+.contact .container .row .contact-form form input[placeholder] {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
 .contact .container .row .contact-form form input[type=email] {
   width: 50%;
   min-height: 50px;
@@ -394,6 +394,12 @@ header .navBar .portfolio-content .active {
   width: 50%;
   min-height: 200px;
   border-color: #e5e6e9;
+}
+.contact .container .row .contact-form form textarea[placeholder] {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
 }
 .contact .container .row .contact-form form button {
   width: 150px;
@@ -411,6 +417,15 @@ header .navBar .portfolio-content .active {
 .contact .container .row .contact-form form button:hover {
   color: #fff;
   background-color: palevioletred;
+}
+.contact .container .row .contact-form form #error {
+  color: red;
+  font-size: 15px;
+  font-weight: 800;
+  position: relative;
+  top: -30px;
+  left: 0;
+  display: block;
 }
 
 footer {
@@ -438,21 +453,6 @@ footer .row .footer-top .footer-part p {
   font-size: 16px;
   margin: 35px 0 21px 0;
   line-height: 1.8;
-}
-footer .row .footer-top .footer-part .social-medias {
-  margin-bottom: 40px;
-}
-footer .row .footer-top .footer-part .social-medias a {
-  color: #fff;
-  font-size: 22px;
-  padding: 9px;
-  position: relative;
-  top: 0;
-  transition: all 0.3s ease-in-out;
-}
-footer .row .footer-top .footer-part .social-medias a:hover {
-  color: white;
-  top: -5px;
 }
 footer .row .footer-top .footer-part h4 {
   color: #fff;

@@ -78,31 +78,31 @@
         },
         {
         "id": 2,
-        "title": "Snakers",
-        "description": "Html/SCSS",
+        "title": "Colorlib",
+        "description": "Html/CSS",
         "imgUrl": "./assets/images/pic2.png"
         },
         {
         "id": 3,
-        "title": "Highsnaker",
-        "description": "Html/SCSS",
+        "title": "Bootstrap Template",
+        "description": "Html/CSS/BOOTSTRAP",
         "imgUrl": "./assets/images/pic3.png"
         },
         {
         "id": 4,
-        "title": "Nike",
-        "description": "Html/SCSS",
+        "title": "Card",
+        "description": "Html/CSS",
         "imgUrl": "./assets/images/pic4.png"
         },
         {
         "id": 5,
-        "title": "Highsnaker",
-        "description": "Html/SCSS",
+        "title": "Simple Website",
+        "description": "Html/CSS",
         "imgUrl": "./assets/images/pic5.png"
         },
         {
         "id": 6,
-        "title": "Nike",
+        "title": "Nitro",
         "description": "Html/SCSS",
         "imgUrl": "./assets/images/pic6.png"
         }

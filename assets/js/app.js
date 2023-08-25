@@ -181,10 +181,9 @@ function mapPortfolioData() {
                 <div class="image-hover">
                     <div class="image-info">
                         <p class="project-name">${item.title}</p>
-                        <span class="project-description">${item.description}</span>
-                    </div>
+                        </div>
                     <div class="learn-more" id="${item.id}">
-                        <button class="btn">Learn More</button>
+                      <p class="project-description">${item.description}</p>
                     </div>
                 </div>
             </div>
@@ -194,3 +193,88 @@ function mapPortfolioData() {
 }
 //End Portfolio
 
+//Start Form
+// CommonJS
+
+const button=document.querySelector('.btn');
+let form=[];
+button.addEventListener("click",(e)=>{
+  e.preventDefault();
+  const name=document.querySelector('#name');
+  const surname=document.querySelector('#surname');
+  const email=document.querySelector('#email');
+  const message=document.querySelector('#message');
+  if (validation(name.value, surname.value, email.value, message.value)) {
+      const obj = {
+        name: name.value,
+        surname: surname.value,
+        email: email.value,
+        message: message.value
+      };
+      form.push(obj);
+      // console.log(form);
+      //sweetAlert
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Your message is successful',
+        showConfirmButton: false,
+        timer: 1500
+      });
+      name.value='';
+      surname.value='';
+      email.value='';
+      message.value='';
+  };
+ 
+})
+const emailRegEx=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const regName =/^[A-Za-z\-]+$/;
+const regSurname = /^[A-Za-z\-]+$/;
+const messageRegEx=/^.{30,}$/;
+
+const nameErrorMsg=document.querySelector('.nameError-message');
+const surnameErrorMsg=document.querySelector('.surnameError-message');
+const emailErrorMsg=document.querySelector('.emailError-message');
+const textErrorMsg=document.querySelector('.textError-message');
+function validation(name,surname,email,message){
+  let isValid=true;
+  if(!regName.test(name)){
+    nameErrorMsg.textContent='Invalid: Enter Your Name correctly'
+    isValid= false;
+  }else{
+    nameErrorMsg.textContent="";
+    isValid=true;
+  }
+  if(!regSurname.test(surname)){
+    surnameErrorMsg.textContent="Invalid: Enter Your Surname correctly"
+    isValid= false;
+  }else{
+    surnameErrorMsg.textContent="";
+    isValid=true;
+  }
+  if(!emailRegEx.test(email)){
+    emailErrorMsg.textContent="Invalid : Check Your Email"
+    isValid= false;
+  }else{
+    emailErrorMsg.textContent="";
+    isValid=true;
+  }
+  if(!messageRegEx.test(message)){
+    textErrorMsg.textContent="Invalid : at least 30 characters"
+    isValid= false;
+  }else{
+    textErrorMsg.textContent="";
+    isValid=true;
+  }
+  return isValid;
+}
+
+//End Form
+
+//Start Date
+const year=document.querySelector(".year");
+let today = new Date();
+today = today.getFullYear();
+year.textContent=today;
+//End Date

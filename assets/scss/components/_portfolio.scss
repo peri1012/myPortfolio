@@ -73,31 +73,25 @@
                                 color:black;
                                 padding:10px;
                                 .project-name{
-                                    font-size:20px;
+                                    font-size:24px;
                                     text-align: center;
-                                }
-                                .project-description{
-                                    font-size:16px;
+                                    font-weight: 800;
                                 }
                             }
                             .learn-more{
                                 width: 100%;
                                 position: relative;
                                 top:0;
-                                .btn{
+                                .project-description{
                                     width: 100%;
                                     padding:20px;
-                                    font-size:24px;
-                                    color:red;
+                                    font-size:16px;
+                                    color:black;
                                     background-color: palevioletred;
-                                    border: none;
                                 }
                             }
                         }
                         &:hover{
-                            img{
-                                opacity: 0.9;
-                            }
                             .image-hover{
                                 opacity: 1;
                             }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- Slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+    <!-- My CSS -->
     <link rel="stylesheet" href="./assets/scss/index.css">
 </head>
 <body>
@@ -85,12 +86,16 @@
                         <h2>CONTACT ME</h2>
                     </div>
                     <div class="contact-form">
-                        <form action="#" method="post">
-                            <input type="text" name="name" placeholder="Enter your name" required>
-                            <input type="text" name="surname" placeholder="Enter your surname" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <textarea name="message" cols="30" rows="10" placeholder="Enter Message" required></textarea>
-                            <button type="submit">SUBMIT</button>
+                        <form >
+                            <input type="text" name="name" placeholder="Enter your name"  id="name">
+                            <span class="nameError-message"  id="error"></span>
+                            <input type="text" name="surname" placeholder="Enter your surname" id="surname" >
+                            <span class="surnameError-message" id="error"></span>
+                            <input type="email" name="email" placeholder="Email"  id="email">
+                            <span class="emailError-message" id="error"></span>
+                            <textarea name="message" cols="30" rows="10" placeholder="Enter Message" id="message"></textarea>
+                            <span class="textError-message" id="error"></span>
+                            <button class="btn" type="submit">SUBMIT</button>
                         </form>
                     </div>
                 </div>
@@ -102,11 +107,6 @@
             <div class="footer-top">
                 <div class="footer-part">
                     <p> I am interested in a web-programming. So I'll continue to boost my skils to be a professional front end developer</p>
-                    <div class="social-medias">
-                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://az.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
                 </div>
                 <div class="footer-part">
                     <h4>Navigation</h4>
@@ -128,12 +128,19 @@
             </div>
             <div class="footer-bottom">
                 <p>
-                    ©<span>2023</span> All rights reserved | made by me
+                    ©<span class="year"></span> All rights reserved | made by me
                 </p>
             </div>
         </div>
     </footer>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- SweetAlert -->
+    <!-- slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- slider -->
+    <!-- My Javascript -->
     <script src="./assets/js/app.js" ></script>
+    <!-- My Javascript -->
 </body>
 </html>
