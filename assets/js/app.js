@@ -283,26 +283,26 @@ let about=document.querySelector('a[href="#about"]');
 about.addEventListener('click',(e)=>{
   e.preventDefault();
   let sectionAbout=document.querySelector('#about');
-  sectionAbout.scrollIntoView({behavior:'smooth'});
+  sectionAbout.scrollIntoView({behavior:'smooth', block:'center'});
 });
 
 let service=document.querySelector('a[href="#services"]');
 service.addEventListener('click',(e)=>{
   e.preventDefault();
   let sectionServices=document.querySelector('#services');
-  sectionServices.scrollIntoView({behavior:'smooth'});
+  sectionServices.scrollIntoView({behavior:'smooth', block:'center'});
 });
 
 let portfolios=document.querySelector('a[href="#portfolio"]');
 portfolios.addEventListener('click',(e)=>{
   e.preventDefault();
   let sectionPortfolio=document.querySelector('#portfolio');
-  sectionPortfolio.scrollIntoView({behavior:'smooth'});
+  sectionPortfolio.scrollIntoView({behavior:'smooth', block:'center'});
 });
 
 let contacts=document.querySelector('a[href="#contact"]');
 contacts.addEventListener('click',(e)=>{
   e.preventDefault();
   let sectionContact=document.querySelector('#contact');
-  sectionContact.scrollIntoView({behavior:'smooth'});
+  sectionContact.scrollIntoView({behavior:'smooth', block:'center'});
 });
