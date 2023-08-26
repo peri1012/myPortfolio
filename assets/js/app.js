@@ -278,3 +278,31 @@ let today = new Date();
 today = today.getFullYear();
 year.textContent=today;
 //End Date
+
+let about=document.querySelector('a[href="#about"]');
+about.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let sectionAbout=document.querySelector('#about');
+  sectionAbout.scrollIntoView({behavior:'smooth'});
+});
+
+let service=document.querySelector('a[href="#services"]');
+service.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let sectionServices=document.querySelector('#services');
+  sectionServices.scrollIntoView({behavior:'smooth'});
+});
+
+let portfolios=document.querySelector('a[href="#portfolio"]');
+portfolios.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let sectionPortfolio=document.querySelector('#portfolio');
+  sectionPortfolio.scrollIntoView({behavior:'smooth'});
+});
+
+let contacts=document.querySelector('a[href="#contact"]');
+contacts.addEventListener('click',(e)=>{
+  e.preventDefault();
+  let sectionContact=document.querySelector('#contact');
+  sectionContact.scrollIntoView({behavior:'smooth'});
+});
